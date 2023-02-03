@@ -1,0 +1,32 @@
+// chose Section Area Start Here
+.chose-area-inner {
+
+    position: relative;
+
+    &.bg-color-01 {
+        background-color: #FAECFF;
+    }
+
+    .img-box {
+        position: relative;
+
+
+    }
+
+    .bg-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .content-wrap {
+        padding-top: 130px;
+        padding-bottom: 140px;
+        position: relative;
+        z-index: 9;
+        padding-left: 80px;
+    }
+}

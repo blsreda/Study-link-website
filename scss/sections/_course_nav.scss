@@ -1,0 +1,103 @@
+// Our Courses Navigation Styling Here
+
+.course-nav {
+    position: relative;
+    z-index: 0;
+    transition: .3s all ease;
+    margin-left: 110px;
+
+    &:hover {
+        .icon {
+            color: var(--main-color-one);
+        }
+
+        .course-navigation {
+            .mega-menu {
+                opacity: 1;
+                visibility: visible;
+                top: 50px;
+            }
+        }
+    }
+
+    .icon {
+        color: #fff;
+        cursor: pointer;
+        margin-right: 5px;
+        font-size: 16px;
+    }
+
+    .course-menu {
+        color: var(--heading-color);
+        font-size: 18px;
+        line-height: 1;
+        font-family: var(--body-font);
+        font-weight: 600;
+    }
+
+    .course-navigation {
+        .mega-menu {
+            position: absolute;
+            text-align: left;
+            min-width: 800px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            left: 0px;
+            top: 78px;
+            box-shadow: 0px 10px 70px rgba(89, 86, 230, 0.1);
+            background: $white;
+            border-radius: 25px;
+            padding: 20px 70px 30px 25px;
+            z-index: 9;
+            transition: .3s all ease;
+            visibility: hidden;
+            opacity: 0;
+
+            .mega-items {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid $stock;
+                padding-bottom: 40px;
+                margin-bottom: 25px;
+
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+
+                    +ul {
+                        border-left: 1px solid $stock;
+                        padding-left: 25px;
+                    }
+
+                    li {
+                        display: block;
+                        margin-left: 0;
+                        line-height: 24px;
+                        font-size: 16px;
+                        font-family: var(--body-font);
+                        font-weight: 500;
+
+                        +li {
+                            margin-top: 20px;
+                        }
+
+                        a {
+                            display: block;
+                            background-color: #fff;
+                            white-space: nowrap;
+                            color: var(--heading-color);
+                            transition: .3s all ease;
+
+                            &:hover {
+                                text-decoration: underline;
+                                color: var(--main-color-one);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+  clear: both;
+
+  .wp-caption-text {
+    margin: 0.8075em 0;
+    opacity: .7;
+    font-weight: 600;
+    a {
+      color: var(--secondary-color);
+    }
+  }
+
+  img[class*="wp-image-"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.wp-caption-text {
+  text-align: center;
+}
+
+figcaption {
+  opacity: .7;
+  font-weight: 600;
+
+  a {
+    color: var(--secondary-color);
+  }
+}
+
+.wp-block-button.is-style-outline {
+  .wp-block-button__link {
+    color: var(--paragraph-color) !important;
+    border-color: var(--main-color-one);
+  }
+}
+
+.wp-block-button {
+  &:not(.is-style-outline) {
+    .wp-block-button__link {
+      color: #fff !important;
+      background-color: var(--main-color-one);
+    }
+  }
+}

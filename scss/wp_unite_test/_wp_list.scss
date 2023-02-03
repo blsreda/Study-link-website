@@ -1,0 +1,282 @@
+/*--------------------------------------------------------------
+# WP List
+--------------------------------------------------------------*/
+.content-area {
+  ul {
+    li {
+      position: relative;
+      padding-left: 15px;
+      + {
+        li {
+          margin-top: 10px;
+        }
+      }
+
+      &:before {
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background-color: var(--paragraph-color);
+        content: '';
+        display: inline-block;
+        margin-right: 5px;
+        left: 0;
+        top: 8px;
+        border-radius: 50%;
+      }
+
+      > ul {
+        li {
+          &:before {
+            background-color: transparent;
+            border: 1px solid;
+          }
+        }
+      }
+    }
+
+    list-style: none;
+  }
+  ol {
+    li {
+      padding-left: 0;
+      &:before {
+        display: none;
+      }
+      + {
+        li {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  .widget {
+    ul {
+      li {
+        padding-left: 0;
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.blog-single-content-wrap {
+  ol {
+    li {
+      + {
+        li {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  ul {
+    li {
+      + {
+        li {
+          margin-top: 10px;
+        }
+      }
+
+      ol {
+        > li {
+          &:before {
+            display: none;
+          }
+
+          padding-left: 0;
+        }
+      }
+
+      &:before {
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background-color: var(--paragraph-color);
+        content: '';
+        display: inline-block;
+        margin-right: 5px;
+        left: 0;
+        top: 8px;
+        border-radius: 50%;
+      }
+
+      position: relative;
+      padding-left: 15px;
+
+      > ul {
+        li {
+          &:before {
+            background-color: transparent;
+            border: 1px solid;
+          }
+        }
+      }
+    }
+
+    list-style: none;
+  }
+
+  .post-meta {
+    li {
+      &:before {
+        display: none;
+      }
+
+      padding-left: 0;
+    }
+  }
+}
+
+.page-content {
+  ol {
+    li {
+      + {
+        li {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  ul {
+    li {
+      + {
+        li {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+.single-comment-wrap {
+  ol {
+    li {
+      + {
+        li {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  ul {
+    li {
+      + {
+        li {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+.comments-area {
+  .comment-list {
+    li {
+      .single-comment-wrap {
+        ul {
+          list-style: none;
+
+          li {
+            &:before {
+              position: absolute;
+              width: 5px;
+              height: 5px;
+              background-color: var(--paragraph-color);
+              content: '';
+              display: inline-block;
+              margin-right: 5px;
+              left: 0;
+              top: 8px;
+              border-radius: 50%;
+            }
+
+            position: relative;
+            padding-left: 15px;
+
+            > ul {
+              li {
+                &:before {
+                  background-color: transparent;
+                  border: 1px solid;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .trackback {
+      margin-bottom: 30px;
+    }
+
+    .pingback {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.carousel-indicators {
+  li {
+    + {
+      li {
+        margin-top: 0 !important;
+      }
+    }
+  }
+}
+
+.footer-widget.widget.widget_nav_menu {
+  ul {
+    li {
+      + {
+        li {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
+
+ul.blocks-gallery-grid {
+  li {
+    &:before {
+      display: none;
+    }
+
+    padding-left: 0;
+  }
+}
+
+.blog-details-footer {
+  .right {
+    .social-share {
+      li {
+        &:before {
+          display: none;
+        }
+
+        padding-left: 0;
+      }
+    }
+  }
+
+  .left {
+    .tags {
+      li {
+        &:before {
+          display: none;
+        }
+
+        padding-left: 0;
+      }
+    }
+  }
+}

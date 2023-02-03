@@ -1,0 +1,40 @@
+// Features Section Styling Here
+.features-section {
+    position: relative;
+    z-index: 0;
+
+    &.home-two {
+        margin-top: 140px;
+
+        .theme-section-title {
+            margin-bottom: 45px;
+
+            .title {
+                margin-bottom: 32px;
+            }
+        }
+
+        .thumbnail {
+            text-align: right;
+        }
+    }
+
+    &.style-01 {
+        .theme-section-title {
+            .title {
+                margin-bottom: 30px;
+            }
+
+            p {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .shape {
+        position: absolute;
+        z-index: -1;
+        bottom: -157px;
+        left: 75px;
+    }
+}

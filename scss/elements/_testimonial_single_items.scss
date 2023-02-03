@@ -1,0 +1,116 @@
+/*-------------------------
+    Testimonial Area
+-------------------------*/
+.testimonial-single-items {
+
+    &.style-01 {
+        background: $white;
+        padding: 50px 35px 50px;
+        border-radius: 30px;
+
+        .feedback-wrap {
+            margin-bottom: 38px;
+
+            .feedback-icon-list {
+                display: flex;
+                align-items: center;
+
+                .single-feedback-item {
+                    margin-right: 5px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    .icon {
+                        font-size: 16px;
+                        color: #FFC44E;
+                    }
+                }
+            }
+        }
+
+        .content {
+            .feedback-text {
+                font-family: var(--body-font);
+                font-size: 18px;
+                line-height: 30px;
+                font-weight: 500;
+                color: var(--heading-color);
+                font-style: italic;
+                margin-bottom: 40px;
+            }
+        }
+
+        .client-and-quote {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .client-details {
+            display: flex;
+            align-items: center;
+
+            .thumb {
+                margin-right: 20px;
+
+                img {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+
+            .content {
+                .client-name {
+                    font-family: var(--body-font);
+                    font-size: 16px;
+                    line-height: 22px;
+                    font-weight: 500;
+                    color: var(--heading-color);
+                    display: block;
+                }
+
+                .designation {
+                    font-family: var(--body-font);
+                    font-size: 16px;
+                    line-height: 22px;
+                    font-weight: 400;
+                    color: #6B6B6B;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        .quote {
+            .icon {
+                color: #E4E4E4;
+                font-size: 40px;
+                transition: $transition;
+            }
+        }
+
+        &:hover {
+            .quote {
+                .icon {
+                    color: var(--main-color-one);
+                }
+            }
+        }
+
+        &.v-02 {
+            border: $border;
+
+            &.no-border {
+                border-color: transparent;
+            }
+        }
+    }
+}
+
+.testimonial-inner-bg {
+    background-color: #FAECFF;
+    padding: 135px 0 140px;
+}

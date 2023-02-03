@@ -1,0 +1,134 @@
+/*--------------------------------------------------------------
+# WP Table
+--------------------------------------------------------------*/
+.blog-single-content-wrap {
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 15px;
+    td {
+      border: 1px solid #e3e3e3;
+      padding: 8px;
+      a {
+        text-decoration: underline;
+        color: var(--main-color-one);
+        font-weight: 400;
+      }
+    }
+    th {
+      border: 1px solid #e3e3e3;
+      padding: 8px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      a {
+        text-decoration: underline;
+        font-weight: 600;
+      }
+    }
+  }
+}
+.page-content {
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 15px;
+    td {
+      border: 1px solid #e3e3e3;
+      padding: 8px;
+      a {
+        text-decoration: underline;
+        color: var(--main-color-one);
+        font-weight: 400;
+      }
+    }
+    th {
+      border: 1px solid #e3e3e3;
+      padding: 8px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      a {
+        text-decoration: underline;
+        font-weight: 600;
+      }
+    }
+  }
+}
+.single-comment-wrap {
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 15px;
+    td {
+      border: 1px solid #e3e3e3;
+      padding: 8px;
+      a {
+        text-decoration: underline;
+        color: var(--main-color-one);
+        font-weight: 400;
+      }
+    }
+    th {
+      border: 1px solid #e3e3e3;
+      padding: 8px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      a {
+        text-decoration: underline;
+        font-weight: 600;
+      }
+    }
+  }
+}
+.content-area {
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 15px;
+    th {
+      border: 1px solid #e3e3e3;
+      padding: 8px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      a {
+        text-decoration: underline;
+        color: var(--main-color-one);
+        font-weight: 400;
+      }
+    }
+    td {
+      border: 1px solid #e3e3e3;
+      padding: 8px;
+      a {
+        text-decoration: underline;
+        color: var(--main-color-one);
+        font-weight: 400;
+      }
+    }
+  }
+}
+.calendar_wrap {
+  table {
+    td {
+      text-align: center;
+    }
+  }
+}
+.widget_calendar table {
+  td a, th a {
+    font-weight: 600;
+    color: var(--main-color-one);
+    text-decoration: underline;
+  }
+}
+
+.footer-widget.widget_calendar table {
+  td a, th a {
+    font-weight: 600;
+    color: var(--main-color-one);
+    text-decoration: underline;
+  }
+}

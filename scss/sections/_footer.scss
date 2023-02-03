@@ -1,0 +1,98 @@
+/*-------------------------
+    Footer Area
+-------------------------*/
+
+.footer-top {
+    background-color: var(--heading-color);
+
+    &.style-01 {
+        margin-top: 140px;
+    }
+}
+
+.footer-middle {
+    border-top: 1px solid #e4e4e42e;
+    padding-top: 60px;
+}
+
+.copyright-area {
+    background-color: $black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .copyright-area-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px 0px;
+
+        p {
+            font-size: 14px;
+            line-height: 1.5;
+            font-family: var(--body-font);
+            font-weight: 400;
+            color: rgba($color: $white, $alpha: 0.7);
+            margin-bottom: 0;
+
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.footer-area.style-01 {
+    .footer-top {
+        padding-top: 140px;
+    }
+
+    .widget.widget_subscribe .subscibe-wrapper .content-wrap .content {
+        margin-left: 40px;
+        flex: 1;
+    }
+
+    .subscribe-form {
+        margin-right: 0;
+
+        .form-group {
+            display: flex;
+            width: 645px;
+
+            input {
+                flex: 1;
+                border-top-right-radius: 0 !important;
+                border-bottom-right-radius: 0 !important;
+                padding: 20px !important;
+            }
+
+            .btn-wrap {
+                width: 188px;
+
+                a {
+                    height: 80px;
+                    border-top-left-radius: 0 !important;
+                    border-bottom-left-radius: 0 !important;
+                    width: 100%;
+                    background-color: #F32424;
+                    display: block;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 80px;
+                    text-transform: capitalize;
+                    color: #fff;
+                    text-align: center;
+                    border-radius: 0 15px 15px 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        display: inline-block;
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

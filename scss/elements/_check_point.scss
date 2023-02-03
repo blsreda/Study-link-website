@@ -1,0 +1,79 @@
+/*-------------------------
+    Check point elements
+-------------------------*/
+
+.check-point-list {
+    &.style-01 {
+        .single-check-point {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 16px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .icon-wrap {
+                margin-right: 12px;
+
+                .icon {
+                    font-size: 16px;
+                    color: var(--main-color-one);
+                }
+            }
+
+            .content {
+                flex: 1;
+
+                .text {
+                    font-family: var(--body-font);
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 30px;
+                    color: var(--heading-color);
+                }
+            }
+        }
+
+        &.v-02 {
+            .single-check-point {
+
+                .icon-wrap {
+                    width: 26px;
+                    height: 26px;
+                    line-height: 28px;
+                    border-radius: 50%;
+                    background-color: var(--main-color-one);
+                    text-align: center;
+                    margin-right: 20px;
+
+                    .icon {
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        &.v-03 {
+            .single-check-point {
+                margin-bottom: 5px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.check-point-wrap {
+    .details-title {
+        font-family: var(--body-font);
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 30px;
+        color: var(--heading-color);
+        font-style: italic;
+        margin-bottom: 22px;
+    }
+}

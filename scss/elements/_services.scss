@@ -1,0 +1,41 @@
+/*----------------------------
+    our services
+----------------------------*/
+.single-our-services-item {
+    &.style-01 {
+        text-align: center;
+        background-color: #fff;
+        padding: 50px 35px 45px;
+        border-radius: 20px;
+        margin: 0 10px;
+        box-shadow: 0px 30px 70px rgba(89, 86, 230, 0.05);
+
+        .icon {
+            transition: all ease 0.3s;
+
+            img {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+            }
+        }
+
+        .content {
+            padding-top: 25px;
+
+            .title {
+                font-size: 24px;
+                line-height: 30px;
+                font-weight: 600;
+                text-transform: capitalize;
+                margin-bottom: 20px;
+            }
+        }
+
+        &:hover {
+            .icon {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+}

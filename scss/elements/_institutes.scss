@@ -1,0 +1,28 @@
+/*-------------------------
+    Institutes elements
+-------------------------*/
+.institutes-inner {
+    margin-top: -15px;
+    margin-bottom: -15px;
+}
+
+.institutes-content-wrap {
+    display: flex;
+
+    .single-institute-item {
+        background-color: #fff;
+        height: 145px;
+        width: 208px;
+        border: $border;
+        border-radius: 20px;
+        margin: 15px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

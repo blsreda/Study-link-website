@@ -1,0 +1,127 @@
+// Courses Section Styling Here
+.courses-section-area {
+    margin-top: 140px;
+
+    .nav-pills {
+        justify-content: center;
+        margin-bottom: 55px;
+
+        .nav-item {
+            +.nav-item {
+                margin-left: 50px;
+            }
+
+            .nav-link {
+                padding: 0;
+                border-radius: 0;
+                font-size: 16px;
+                line-height: 1.4;
+                font-weight: 400;
+                font-family: var(--heading-font);
+                color: var(--heading-color);
+
+                &.active {
+                    color: var(--main-color-one);
+                    background: none;
+                }
+            }
+        }
+    }
+}
+
+
+.course-slider-wrapper {
+    margin: -30px;
+
+    &.style-01 {
+        margin-left: 52px;
+    }
+}
+
+.course-slider-one {
+    overflow: hidden;
+    padding: 30px;
+
+    .swiper-notification {
+        display: none;
+    }
+
+    .swiper-pagination {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet {
+        height: 10px;
+        width: 10px;
+        border-radius: 3px;
+        background-color: $stock;
+        opacity: 1;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet-active {
+        border: none;
+        background-color: var(--main-color-one);
+        position: relative;
+    }
+}
+
+.course-slider-two {
+    overflow: hidden;
+    padding: 30px;
+
+    .slider-nav-area {
+        position: absolute;
+        top: 20%;
+        right: 12%;
+        display: flex;
+
+        .slider-next {
+            margin-left: 145px;
+        }
+
+        .slider-navigation {
+            width: 65px;
+            height: 65px;
+            line-height: 65px;
+            text-align: center;
+            background: $white;
+            border-radius: 20px;
+        }
+    }
+}
+
+
+.swiper-pagination {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    &.style-01 {
+        .swiper-pagination-bullet {
+            background: $white;
+        }
+    }
+
+    .swiper-pagination-bullet {
+        height: 10px;
+        width: 10px;
+        border-radius: 3px;
+        background-color: $stock;
+        opacity: 1;
+
+        +.swiper-pagination-bullet {
+            margin-left: 10px;
+        }
+
+    }
+
+    .swiper-pagination-bullet-active {
+        border: none;
+        background-color: var(--main-color-one) !important;
+        position: relative;
+    }
+}

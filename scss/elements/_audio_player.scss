@@ -1,0 +1,142 @@
+// Audio Player Styling 🙁 
+
+.audio-player {
+  width: 100%;
+  background: $stock;
+  font-family: arial;
+  color: var(--heading-color);
+  padding: 15px 30px;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 30px;
+  margin-top: 50px;
+
+  .timeline {
+    background: white;
+    width: 70%;
+    height: 10px;
+    position: relative;
+    cursor: pointer;
+    left: 0px;
+
+    .custom-progress {
+      background: var(--heading-color);
+      width: 0%;
+      height: 100%;
+      transition: 0.25s;
+      border-radius: 0;
+    }
+  }
+
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .play-container {
+      height: 30px;
+      width: 30px;
+      line-height: 30px;
+      text-align: center;
+      border-radius: 2px;
+    }
+
+    .toggle-play {
+      &.play {
+        cursor: pointer;
+        position: relative;
+        left: 65%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 0;
+        width: 0;
+        border: 10px solid rgba(0, 0, 0, 0);
+        border-left: 15px solid var(--heading-color);
+      }
+
+      &.pause {
+        height: 15px;
+        width: 20px;
+        cursor: pointer;
+        position: relative;
+        top: 50%;
+        left: 62%;
+        transform: translate(-50%, -50%);
+
+        &:before {
+          position: absolute;
+          top: 0;
+          left: 0px;
+          background: var(--heading-color);
+          content: "";
+          height: 15px;
+          width: 3px;
+        }
+
+        &:after {
+          position: absolute;
+          top: 0;
+          right: 8px;
+          background: var(--heading-color);
+          content: "";
+          height: 15px;
+          width: 3px;
+        }
+      }
+    }
+
+    .time {
+      display: flex;
+      position: absolute;
+      left: 75px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--heading-color);
+      font-family: var(--body-font);
+    }
+
+    .volume-container {
+      cursor: pointer;
+      position: relative;
+      z-index: 2;
+      left: -70px;
+
+      .volume-button {
+        display: flex;
+        align-items: center;
+
+        i {
+          font-size: 16px;
+        }
+      }
+
+      .volume-slider {
+        position: absolute;
+        right: -3px;
+        top: 3px;
+        z-index: -1;
+        width: 0;
+        height: 10px;
+        background: white;
+        transition: .25s;
+
+        .volume-percentage {
+          background: var(--heading-color);
+          height: 100%;
+          width: 75%;
+        }
+      }
+
+      &:hover {
+        .volume-slider {
+          right: -75px;
+          width: 70px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+/*---------------------------------------
+    ## Back Top
+---------------------------------------*/
+
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+    // background-image: linear-gradient(275deg, #DD131A 0%, #0E115A 100%);
+    background: var(--main-color-one);
+    color: $white;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 20px;
+    z-index: 99;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(118, 74, 241, 0.5);
+    display: none;
+}

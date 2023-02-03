@@ -1,0 +1,126 @@
+//Image Box Item
+
+.image-box-item {
+  margin-bottom: 30px;
+
+  &:hover {
+    .thumbnail {
+      &::after {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      &::before {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  .thumbnail {
+    position: relative;
+    z-index: 0;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #1C2936 83.41%, #1C2936 100%);
+      border-radius: 20px;
+      transition: .3s all ease;
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(118, 74, 241, 0.8) 83.41%, #764AF1 100%);
+      border-radius: 20px;
+      transition: .3s all ease;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    img {
+      border-radius: 20px;
+      width: 100%;
+    }
+
+    .content {
+      position: absolute;
+      z-index: 1;
+      text-align: center;
+      left: 40px;
+      bottom: 25px;
+      width: calc(100% - 80px);
+
+      .title {
+        color: #fff;
+        font-size: 20px;
+        line-height: 1.2;
+        font-weight: 700;
+        margin-bottom: 5px;
+      }
+
+      p {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 14px;
+        line-height: 1.8;
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.image-box-item-two {
+  border-radius: 50px;
+  padding: 70px;
+
+  &.bg-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(#FBAD41, #980F00);
+      background-blend-mode: multiply;
+      background-size: cover;
+      z-index: -1;
+      border-radius: 50px;
+    }
+  }
+
+  .content {
+    .title {
+      color: #fff;
+      font-size: 55px;
+      font-weight: 700
+    }
+
+    .subtitle {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      font-family: 'Amita', cursive;
+      ;
+    }
+  }
+}

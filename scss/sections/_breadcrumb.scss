@@ -1,0 +1,26 @@
+/*---------------------
+    ## Breadcumb
+----------------------*/
+.breadcrumb-wrap {
+  &.style-01 {
+    padding-bottom: 55px;
+
+    .breadcrumb-content {
+      .title {
+        font-size: 45px;
+        line-height: 60px;
+        font-weight: 600;
+        color: var(--heading-color);
+        margin-bottom: 20px;
+      }
+
+      .details {
+        font-family: var(--body-font);
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 400;
+        color: var(--heading-color);
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+// Category Single Items Styling Here
+.category-item {
+    margin-bottom: 30px;
+    padding-right: 28px;
+
+    .categories-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: .3s all ease;
+        border: 1px solid $stock;
+        border-radius: 15px;
+        padding: 15px 30px 10px 30px;
+
+        &:hover {
+            box-shadow: 0px 20px 50px rgba(89, 86, 230, 0.08);
+        }
+
+        +.categories-inner {
+            margin-top: 20px;
+        }
+
+        .content-wrap {
+            display: flex;
+
+            .icon {
+                img {
+                    margin-right: 30px;
+                }
+            }
+
+            .content {
+                .title {
+                    font-size: 18px;
+                    line-height: 1.12;
+                    font-weight: 600;
+                    margin-bottom: 8px;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 1.38;
+                    font-weight: 400;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,88 @@
+/*----------------------------
+    Pagination
+----------------------------*/
+.pagination {
+    padding-top: 60px;
+
+    .pagination-list {
+        display: flex;
+        margin: auto;
+        padding-left: 0;
+
+        li {
+            display: inline-block;
+
+            .page-number {
+                font-family: var(--body-font);
+                font-size: 16px;
+                font-weight: 400;
+                color: var(--heading-color);
+                display: inline-block;
+                text-align: center;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                margin: 0 6px;
+                transition: all linear 0.2s;
+                border: 1px solid #E1E1E1;
+                font-weight: 600;
+                border-radius: 12px;
+                font-size: 16px;
+
+                &.disable {
+                    pointer-events: none;
+                    cursor: not-allowed;
+                }
+
+                &.able {
+                    border-color: var(--paragraph-color);
+                }
+
+                &.more {
+                    pointer-events: none;
+                }
+
+                &.current {
+                    background-color: var(--main-color-one);
+                    color: $white;
+                    border-color: var(--main-color-one);
+                    // cursor: default;
+                    pointer-events: none;
+                }
+
+                &.left-arrow,
+                &.right-arrow {
+                    font-family: var(--body-font);
+                    font-size: 18px;
+                    font-weight: 400;
+                    border: none;
+                    color: #CDCDCD;
+                    margin: 0 14px;
+
+                    .icon {
+                        line-height: 49px;
+                    }
+
+                    svg path {
+                        transition: $transition;
+                    }
+
+                    &:hover {
+                        background-color: transparent;
+                        color: var(--main-color-one);
+                    }
+                }
+
+                &:hover {
+                    background-color: var(--main-color-one);
+                    color: $white;
+                    border-color: var(--main-color-one);
+
+                    svg path {
+                        fill: $white;
+                    }
+                }
+            }
+        }
+    }
+}

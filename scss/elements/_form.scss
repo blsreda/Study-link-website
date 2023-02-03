@@ -1,0 +1,229 @@
+/*---------------------
+    ## Form Area
+----------------------*/
+
+.form {
+    .form-element {
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        input[type="tel"],
+        input[type="url"],
+        input[type="date"],
+        textarea {
+            height: 74px;
+            border: 1px solid #E1E1E1;
+            border-radius: 20px;
+            background-color: $white;
+            padding: 25px;
+            width: 100%;
+            margin: 0;
+            font-size: 16px;
+            padding: 15px 20px 15px 60px;
+            color: #6A6A6A;
+            transition: $transition;
+
+            &::placeholder {
+                color: #6B6B6B;
+            }
+
+            &:focus-visible {
+                outline: 0;
+
+                &::placeholder {
+                    color: #6B6B6B;
+
+                }
+
+            }
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            /* display: none; <- Crashes Chrome on hover */
+            -webkit-appearance: none;
+            margin: 0;
+            /* <-- Apparently some margin are still there even though it's hidden */
+        }
+
+        input[type=number] {
+            -moz-appearance: textfield;
+            /* Firefox */
+        }
+
+        textarea {
+            width: 100%;
+            height: 220px;
+            resize: none;
+            padding-left: 30px;
+
+            // &:focus-visible {
+            //     outline: 0;
+            //     border-color: #6CD342;
+            //     color: #fff;
+            // }
+        }
+
+        // Nice Select Control 
+        .nice-select {
+            height: 74px;
+            border: 1px solid #E1E1E1;
+            border-radius: 20px;
+            background-color: #fff;
+            padding: 25px;
+            width: 100%;
+            margin: 0;
+            font-size: 16px;
+            padding: 15px 20px 15px 60px;
+            color: #6A6A6A;
+            transition: $transition;
+
+            &:after {
+                height: 8px;
+                width: 8px;
+                right: 25px;
+            }
+
+            &:focus {
+                outline: 0;
+
+                .current {
+                    color: #6A6A6A;
+
+                }
+            }
+
+            .list {
+                width: 100%;
+                border: 1px solid #fff;
+                background-color: #fff !important;
+                box-shadow: 0 2px 4px 0 rgb(34 36 38 / 12%), 0 2px 10px 0 rgb(34 36 38 / 8%);
+
+                .option {
+                    background-color: #fff !important;
+                    color: #6A6A6A;
+
+                    &.disabled {
+                        display: none;
+                    }
+
+                    &.selected {
+                        background-color: #e8e8e8 !important;
+                        font-weight: 400;
+                    }
+
+                    &:hover {
+                        background-color: #e8e8e8 !important;
+                    }
+                }
+            }
+        }
+
+        .acknowledgement-wrap {
+            display: flex;
+            align-items: baseline;
+
+            .form-acknowledgement-check {
+                position: relative;
+                cursor: pointer;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: -2px;
+                    left: 0;
+                    width: 18px;
+                    height: 18px;
+                    border: 1px solid #3E3E3E;
+                    border-radius: 3px;
+                    background-color: #0F0F0F;
+                    transition: all linear 0.1s;
+                }
+
+                &:checked {
+                    &::after {
+                        background-color: #6CD342;
+                    }
+                }
+            }
+
+            .form-acknowledgement-label {
+                font-size: 14px;
+                line-height: 24px;
+                color: #6B6B6B;
+                padding-left: 12px;
+
+                a {
+                    text-decoration: none;
+                    color: #6CD342;
+                    text-transform: capitalize;
+                }
+            }
+        }
+
+        .btn-submit {
+            font-size: 18px;
+            font-weight: 500;
+            color: #fff;
+            border: 1px solid #6CD342;
+            background-color: #6CD342;
+            border-radius: 6px;
+            padding: 18px 49px 20px;
+            transition: all linear 0.1s;
+
+            &:hover {
+                background-color: transparent;
+                color: #6CD342;
+                cursor: pointer;
+            }
+        }
+
+        &>.row {
+            &>div {
+                position: relative;
+
+                .icon,
+                i {
+                    position: absolute;
+                    left: 48px;
+                    top: 29px;
+                    color: #CDCDCD;
+                    z-index: 5;
+                }
+            }
+        }
+    }
+}
+
+.newsletter {
+    &.style-01 {
+        .form-element {
+            display: flex;
+            width: 800px;
+            border-radius: 20px;
+            background-color: $white;
+            overflow: hidden;
+
+            input {
+                border-color: transparent;
+                border-radius: 20px;
+            }
+
+            .btn-submit {
+                font-size: 22px;
+                background-color: transparent;
+                border-color: transparent;
+                color: #3E3E3E;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+        }
+    }
+}

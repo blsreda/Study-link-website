@@ -1,0 +1,15 @@
+// Testimonial Section Styling Here
+.testimonial-section {
+    position: relative;
+    z-index: 0;
+    background: #F2F2F2;
+    padding: 130px 0px 110px;
+
+    .testimonial-shape {
+        position: absolute;
+        z-index: -1;
+        right: 10%;
+        bottom: 95px;
+        opacity: 0.5;
+    }
+}

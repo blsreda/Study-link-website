@@ -1,0 +1,272 @@
+/*-------------------------
+    Contact Info Item
+-------------------------*/
+.contact-inner {
+    .title {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: normal;
+        transform: initial;
+        margin-bottom: 35px;
+    }
+
+    .contact-address-wrap {
+        background-color: #FAECFF;
+        border-radius: 30px;
+        padding: 50px 100px 50px 50px;
+
+        .contact-list {
+            .contact-item {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 40px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                .icon-wrap {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    line-height: 40px;
+                    background: #774af11b;
+                    color: #764AF1;
+                    text-align: center;
+                    font-size: 16px;
+                    margin-right: 20px;
+
+                    &.color-02 {
+                        background-color: #FBE4DC;
+                        color: #FFC44E;
+                    }
+
+                    &.color-03 {
+                        background-color: #F9C4D3;
+                        color: #F32424;
+                    }
+                }
+
+                .text {
+                    flex: 1;
+
+                    .details {
+                        display: block;
+                        font-family: var(--paragraph-color);
+                        color: var(--heading-color);
+                        font-size: 16px;
+                        line-height: 27px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+        .social-media-list {
+            margin-top: 80px;
+        }
+    }
+
+    .contact-form {
+        .form {
+            .form-element {
+                input {
+                    height: 74px;
+                    border-radius: 20px;
+                    border: 1px solid #E4E4E4;
+                    padding: 15px 20px 15px 60px;
+                }
+
+                textarea {
+                    height: 140px;
+                    border-radius: 20px;
+                }
+
+                &>.row {
+                    &>div {
+                        position: relative;
+
+                        .icon,
+                        i {
+                            position: absolute;
+                            left: 48px;
+                            top: 29px;
+                            color: #CDCDCD;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.contact-address {
+    background-color: #FAECFF;
+    padding: 50px;
+    border-radius: 15px;
+
+    .contact-address-list {
+        margin-bottom: 42px;
+
+        .single-address-item {
+            display: flex;
+            margin-bottom: 40px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .icon-wrap {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                line-height: 40px;
+                text-align: center;
+                margin-right: 20px;
+
+                .icon {
+                    font-size: 16px;
+                }
+
+                &.color-01 {
+                    background-color: #F5E6FE;
+
+                    .icon {
+                        color: #764AF1;
+                    }
+                }
+
+                &.color-02 {
+                    background-color: #fbe4dc;
+
+                    .icon {
+                        color: #FFC44E;
+                    }
+                }
+
+                &.color-03 {
+                    background-color: #f9c4d3;
+
+                    .icon {
+                        color: #F32424;
+                    }
+                }
+            }
+
+            .text {
+                font-family: var(--body-font);
+                font-size: 16px;
+                line-height: 28px;
+                font-weight: 500;
+                color: var(--heading-color);
+                flex: 1;
+                word-break: break-all;
+            }
+        }
+    }
+}
+
+/*-------------------------
+    apply online
+-------------------------*/
+
+.apply-form-inner {
+    background-color: $white;
+    border-radius: 30px;
+    padding: 50px 50px;
+    box-shadow: 0px 0px 50px rgba(89, 86, 230, 0.05);
+
+    .part {
+        margin-bottom: 50px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .title {
+        font-family: var(--body-font);
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+
+    .ui.input.left {
+        width: 100%;
+    }
+
+    i.chevron.right.icon {
+        display: none !important;
+    }
+
+    .selection-list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        li {
+            // border: 1px solid #ddd;
+            padding: 30px 33px;
+            margin-right: 20px;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 20px;
+            position: relative;
+            height: 210px;
+            z-index: 1;
+            margin-bottom: 30px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            .title {
+                margin-top: 25px;
+                font-size: 20px;
+                font-weight: 400;
+                margin-bottom: 0;
+            }
+
+            input {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 0%;
+                background-color: transparent;
+                border: 1px solid #ddd;
+                border-radius: 20px;
+                cursor: pointer;
+
+                &::after {
+                    border: 1px solid #ddd;
+                    z-index: 9;
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    height: 210px;
+                    border-radius: 20px;
+                }
+
+                &:checked {
+                    &::after {
+                        border-color: #764AF1;
+                    }
+                }
+            }
+
+            &:hover {
+                input {
+                    &::after {
+                        border-color: #764AF1;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .form-submit {
+        margin-top: 60px;
+    }
+}
